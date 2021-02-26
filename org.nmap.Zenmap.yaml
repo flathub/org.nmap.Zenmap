@@ -30,9 +30,7 @@ modules:
 
 - shared-modules/python2.7/python-2.7.json
 
-# Instructions taken: https://github.com/flathub/com.github.labyrinth_team.labyrinth
-# Shared module pending: https://github.com/flathub/shared-modules/pull/138
-- py2gtk2.json
+- shared-modules/pygtk/pygtk.json
 
 - name: zenmap
   buildsystem: autotools
