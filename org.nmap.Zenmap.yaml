@@ -1,7 +1,7 @@
 app-id: org.nmap.Zenmap
-runtime: org.freedesktop.Platform
-sdk: org.freedesktop.Sdk
-runtime-version: '22.08'
+runtime: org.gnome.Platform
+sdk: org.gnome.Sdk
+runtime-version: '44'
 command: zenmap
 
 finish-args:
@@ -24,12 +24,6 @@ cleanup:
   - /lib/*.la
 
 modules:
-
-  - shared-modules/gtk2/gtk2.json
-
-  - shared-modules/python2.7/python-2.7.json
-
-  - shared-modules/pygtk/pygtk.json
 
   - name: zenmap
     buildsystem: autotools
