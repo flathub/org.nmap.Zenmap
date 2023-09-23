@@ -1,17 +1,13 @@
 app-id: org.nmap.Zenmap
 runtime: org.gnome.Platform
 sdk: org.gnome.Sdk
-runtime-version: '44'
+runtime-version: '45'
 command: zenmap
 
 finish-args:
   - --socket=x11
   - --share=ipc
   - --share=network
-
-# Required for input-output.
-# This application uses Python 2 and Gtk 2
-# so sandboxing at this point is a lost cause.
   - --filesystem=home
   - --env=TMPDIR=/var/tmp
 
