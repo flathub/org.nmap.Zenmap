@@ -23,6 +23,8 @@ modules:
 
   - name: zenmap
     buildsystem: autotools
+    config-opts:
+      - "--prefix=/app"
     sources:
       - type: archive
         url: https://nmap.org/dist/nmap-7.95.tar.bz2
