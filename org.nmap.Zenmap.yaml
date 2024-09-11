@@ -1,7 +1,7 @@
 app-id: org.nmap.Zenmap
 runtime: org.gnome.Platform
 sdk: org.gnome.Sdk
-runtime-version: '45'
+runtime-version: '46'
 command: zenmap
 
 finish-args:
