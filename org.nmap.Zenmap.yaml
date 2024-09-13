@@ -21,17 +21,7 @@ cleanup:
 
 modules:
 
-  # --- python-build ---
-  - name: python-build
-    buildsystem: simple
-    build-commands:
-      - pip3 install --no-index --no-build-isolation --prefix="${FLATPAK_DEST}"
-        .
-    cleanup: ['*']
-    sources:
-      - type: archive
-        url: https://files.pythonhosted.org/packages/ce/9e/2d725d2f7729c6e79ca62aeb926492abbc06e25910dd30139d60a68bcb19/build-1.2.1.tar.gz
-        sha256: 526263f4870c26f26c433545579475377b2b7588b6f1eac76a001e873ae3e19d
+  - pypi-dependencies.json
 
   - name: zenmap
     buildsystem: autotools
