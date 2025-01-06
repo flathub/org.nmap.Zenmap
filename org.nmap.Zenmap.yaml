@@ -6,6 +6,7 @@ command: zenmap
 
 finish-args:
   - --socket=x11
+  - --socket=wayland
   - --share=ipc
   - --share=network
   - --filesystem=home
