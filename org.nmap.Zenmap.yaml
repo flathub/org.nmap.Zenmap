@@ -26,6 +26,7 @@ modules:
     buildsystem: autotools    
     build-options:
       cflags: -fpermissive
+      cxxflags: -fpermissive
     sources:
       - type: archive
         url: https://nmap.org/dist/nmap-7.95.tar.bz2
