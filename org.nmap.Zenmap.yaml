@@ -2,7 +2,7 @@ app-id: org.nmap.Zenmap
 runtime: org.gnome.Platform
 sdk: org.gnome.Sdk
 runtime-version: '48'
-command: zenmap
+command: zenmap.sh
 
 finish-args:
   - --socket=wayland
@@ -43,6 +43,7 @@ modules:
       - install -Dm 644 org.nmap.Zenmap.64.png /app/share/icons/hicolor/64x64/apps/org.nmap.Zenmap.png
       - install -Dm 644 org.nmap.Zenmap.128.png /app/share/icons/hicolor/128x128/apps/org.nmap.Zenmap.png
       - install -Dm 644 org.nmap.Zenmap.256.png /app/share/icons/hicolor/256x256/apps/org.nmap.Zenmap.png
+      - install -Dm 755 zenmap.sh /app/bin/zenmap.sh
     sources:
       - type: file
         path: org.nmap.Zenmap.metainfo.xml
@@ -54,4 +55,5 @@ modules:
         path: org.nmap.Zenmap.256.png
       - type: file
         path: org.nmap.Zenmap.desktop
-
+      - type: file
+        path: zenmap.sh
