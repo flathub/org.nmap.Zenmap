@@ -21,6 +21,7 @@ cleanup:
   - /lib/*.la
 
 modules:
+  - shared-modules/dbus-glib/dbus-glib.json
 
   - name: zenmap
     buildsystem: autotools
